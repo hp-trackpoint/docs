@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 什么是hp-trackpoint
-      link: /markdown-examples
+      link: /introduction
     - theme: alt
       text: Github
       link: https://github.com/hp-trackpoint
