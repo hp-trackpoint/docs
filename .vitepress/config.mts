@@ -1,28 +1,25 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/docs/',
-  title: "hp-trackpoint",
-  description: "docs for hp-trackpoint",
+  title: 'hp-trackpoint',
+  description: 'docs for hp-trackpoint',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: '文档', link: '/introduction' }
-    ],
+    nav: [{ text: '文档', link: '/introduction' }],
 
     sidebar: [
       {
         text: '简介',
-        items: [
-          { text: '什么是hp-trackpoint', link: '/introduction' },
-        ]
-      }
+        items: [{ text: '什么是hp-trackpoint', link: '/introduction' }],
+      },
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/hp-trackpoint' }],
+    search: {
+      provider: 'local',
+    },
   },
-  srcDir: './src'
-})
+  srcDir: './src',
+});
